@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patar Beach</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Mrs+Saint+Delafield&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href="css/index.css">
+
+</head>
+<body class = "body-main">
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<div class = "header"> 
+		<div class = "inner-header">
+			<div class = "logo-container">
+				<a href="../Finals_TravelVlog/index.html">
+				<h1>Lakbay<span>Isla</span></h1></a>
+			</div>
+
+			<ul class = "navigation"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+		</div>
+	</div>
+
+	<div class = "main-title">
+    	<h1>Patar Beach</h1>
+    	<div class = "description">
+	    	<blockquote>
+	    		<h4>Nestled in the charming town of Bolinao, Pangasinan, Patar Beach is a slice of tropical paradise waiting to be discovered. Known for its powdery golden sand and crystal-clear waters, this unspoiled beach offers a serene escape from the hustle and bustle of city life.<br><br>What makes Patar Beach truly special is its laid-back atmosphere. Whether you’re basking in the warm sun, taking a dip in its inviting waters, or marveling at the stunning rock formations along the shoreline, every moment here feels like a dream. Don’t miss the breathtaking sunset that paints the sky in hues of orange and pink—perfect for capturing Instagram-worthy shots or simply soaking in nature's beauty.<br><br>For the adventurous, nearby attractions like the Cape Bolinao Lighthouse and the Enchanted Cave are worth exploring. And, of course, no trip to Patar Beach is complete without trying local delicacies like fresh seafood and binungey (sticky rice cooked in bamboo).<br><br>Patar Beach is the ultimate destination for those seeking tranquility, natural beauty, and a touch of adventure. Come and experience the charm of this hidden gem!</h4>
+	    	</blockquote>
+    	</div>
+    </div>
+
+    <div class = "section">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/patar-beach.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/patar-beach1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/patar-beach2.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		<div class="content-text">
+    		<p>Patar Beach is a 500-meter beach situated on the North Western part of Lingayen Gulf in Pangasinan. While various resorts line the shore, its southernmost portions also serve as a public beach. Thanks to its location that faces the West Philippine Sea, Patar Beach offers the best view of the sunset in the area. The beach is also categorized by powerful waves and beautiful rock formations that you can find along the southern coast. <br> <br>The locals consider Patar Beach a natural treasure of the North, especially for nature seekers and beach lovers. The beach is an ideal holiday destination for tourists looking for a serene place to escape the hustle and bustle of the city. </p>
+    	</div>
+    	<hr>
+    	<h2>Location</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30633.462934794698!2d119.79808490000002!3d16.313597950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3393c82620dde3c5%3A0x9da748a272ad0432!2sPatar%2C%20Bolinao%2C%20Pangasinan!5e0!3m2!1sen!2sph!4v1733800589294!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+	</div>
+
+	<div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Available Activities and Attractions</h1>
+    	<div class="content-text">
+    		
+    		<p>Discover the endless possibilities of fun and adventure with our Available Activities page! Whether you're a thrill-seeker, a nature lover, or simply looking to relax, we’ve curated the best activities to make your beach trip unforgettable.<br><br>scroll down to find out what awaits you and plan your perfect day by the sea. Your beach adventure starts here! </p>
+    	</div>
+    	<hr>
+    	<h2>Bolinao Falls</h2>
+		<img src="images/Bolinao-falls.png" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>The Bolinao area mostly consists of flat farmlands, making some people wonder why there’d be waterfalls present within those fields. Still in the midst of these wide plains, there are three beauties of falls available for general public that in their turn give a head start for the Balingasay River to let water flow towards the West-Philippine Sea.<br><br>One can take a 20 min ride per tricycle towards the three Bolinao Falls that are closely located to each other. Bolinao Fall nr. 1 is a waterfall where you can have fun jumping off of in its large basin which in its turn makes for a fantastic natural swimming pool.</p>
+    	</div>
+
+    	<h2>Enchanted Cave</h2>
+		<img src="images/enchanted-cave.png" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>More of an indoor swimmer? There is another great natural attraction located in the Patar Beach area called the Enchanted Cave. This consists of, yes, a cave as well as beautiful forest-like terrains and gardens surrounding it that are as picturesque as they are enchanting.<br><br>When you’re done watching the monkeys, miniature city, and all the other sights within the Enchanted Cave park, you might wanna check out the cave itself right? Yes, you might, so in the center of the park there is a small stairs leading down to an underwater cave you absolutely don’t wanna miss out on. Several Filipino movies have actually been shot here and you’ll know why as soon as you see how enchanting the cave really looks on the inside.</p>
+    	</div>
+    	<img src="images/enchanted-cave1.png" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>More of an indoor swimmer? There is another great natural attraction located in the Patar Beach area called the Enchanted Cave. This consists of, yes, a cave as well as beautiful forest-like terrains and gardens surrounding it that are as picturesque as they are enchanting.<br><br>When you’re done watching the monkeys, miniature city, and all the other sights within the Enchanted Cave park, you might wanna check out the cave itself right? Yes, you might, so in the center of the park there is a small stairs leading down to an underwater cave you absolutely don’t wanna miss out on. Several Filipino movies have actually been shot here and you’ll know why as soon as you see how enchanting the cave really looks on the inside.</p>
+    	</div>
+
+    	<h2>Patar Rock Formation</h2>
+		<img src="images/patar-rock.png" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Being a favorite prenuptial photoshoot location; the Patar Rock Formation might make for a ‘quick check-out’, or just a great day of chilling time at a beautiful rocky coastline, depending on your schedule and preferences.<br><br>This place is typically not crowded and just a relaxing environment, with enough nipa huts to chill at while observing this beautiful piece of coastline called Patar Rock Formation.</p>
+    	</div>
+
+    	<h2>Cape Bolinao Lighthouse</h2>
+		<img src="images/lighthouse.webp" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>A few minutes ride from the Patar Rock Formation you can head over to a free attraction called the Cape Bolinao Lighthouse. Built by the Americans in the early 1900s, this lighthouse still leads some vessels around the coastline up until a 44 km (27.3 mi) distance.<br><br>Being one of the five major lighthouse in the country; in structure this is the highest lighthouse in the Philippines. In elevation it comes in second to the Cape Bojeador Lighthouse (386 ft or 117.7 m above sea level) in Ilocos Norte.<br><br>The Cape Bolinao Lighthouse is 351 ft or 107 m above sea level and provides a scenic look over the beautiful Patar coastline. If you’re lucky enough you can get on top of the lighthouse provided the lighthouse guard is present at the site. If he’s not, you can keep yourself contented by enjoying the nice views from a small observation deck overlooking the coast of Patar Beach area.</p>
+    	</div>
+    </div>
+    	
+    <div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Local Restaurants</h1>
+    	<div class="content-text">
+    		
+    		<p>After a day of sun, sand, and sea, treat yourself to some of the best local dining experiences near Patar Beach. This charming coastal area offers a variety of restaurants where you can indulge in delicious local and international cuisine while enjoying the stunning views and warm ambiance.<br><br>Whether you’re craving freshly caught seafood, traditional Filipino dishes, or something more familiar, the restaurants near Saud Beach cater to every taste. From beachfront dining with a view of the waves to cozy spots serving home-cooked meals, there’s something to satisfy every craving.</p>
+    	</div>
+    	<hr>
+    	<h2>Sungayan Grill</h2>
+		<img src="images/sungayan.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Sungayan Grill, located in the heart of Patar, offers an authentic taste of local flavors with a cozy, rustic ambiance. Known for its fresh, mouthwatering seafood, this family-friendly restaurant is perfect for those craving traditional Filipino dishes. Whether you're enjoying grilled fish, sizzling shrimp, or their specialty sinigang (sour soup), Sungayan Grill delivers a satisfying culinary experience. The laid-back atmosphere and warm service make it a great spot to relax and enjoy a delicious meal after a day at the beach.</p>
+    	</div>
+
+    	<h2>Mangunguna Seafood Bar & Grill</h2>
+		<img src="images/mangunguna.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For a true coastal feast, Mangunguna Seafood Bar & Grill is a must-visit in Patar. This charming seafood restaurant specializes in freshly caught fish, crabs, prawns, and other local delicacies. With its seaside location, you can enjoy your meal with stunning ocean views. The sugpo (prawns) and aligue (crab fat) are local favorites, offering a rich, flavorful experience. The relaxed setting and friendly service make Mangunguna Seafood a perfect place to indulge in fresh seafood while enjoying the beauty of Patar’s coastline.</p>
+    	</div>
+
+    	<h2>River Village Resort and Restaurant</h2>
+		<img src="images/river-village.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Nestled along the river in Patar, River Village Resort and Restaurant offers a peaceful dining experience surrounded by nature. The restaurant serves a variety of delicious Filipino dishes, from grilled meats to hearty stews, all made with fresh, local ingredients. The serene environment, combined with excellent food and welcoming service, makes it a wonderful spot for both casual meals and special occasions. Whether you're dining by the river or enjoying the cool breeze on the outdoor patio, River Village Resort offers a relaxing atmosphere to enjoy authentic Filipino cuisine after a day of exploring the area.</p>
+    	</div>
+    </div>
+
+    <p style="color: gold;"> For more information, Click this link:</p>
+    <a href="https://travelthroughparadise.com/destinations/articles/Bolinao_7_Things_To_Do.php">Explore Bolinao, Pangasinan: Top 7 Attractions & Activities at Patar Beach</a> <br>
+    <a href="https://www.tripadvisor.com.ph/RestaurantsNear-g1142476-d2311459-Patar_Beach-Bolinao_Pangasinan_Province_Ilocos_Region_Luzon.html">Restaurants near Patar Beach</a>
+
+	<footer>
+			<ul class = "navigation-footer"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+	    	<hr>
+			<p class = "footer-text">Author: Marty Joash E. Vapor<br>
+			&copy; Copyright Reserved </p><br>
+    </footer>
+    <!--https://travelthroughparadise.com/destinations/articles/Bolinao_7_Things_To_Do.php-->
+</body>
+</html>

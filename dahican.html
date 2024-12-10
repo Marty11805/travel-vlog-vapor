@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dahican Beach</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Mrs+Saint+Delafield&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href="css/index.css">
+
+</head>
+<body class = "body-main">
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<div class = "header"> 
+		<div class = "inner-header">
+			<div class = "logo-container">
+				<a href="../Finals_TravelVlog/index.html">
+				<h1>Lakbay<span>Isla</span></h1></a>
+			</div>
+
+			<ul class = "navigation"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+		</div>
+	</div>
+
+	<div class = "main-title">
+    	<h1>Dahican Beach</h1>
+    	<div class = "description">
+	    	<blockquote>
+	    		<h4>Located in Mati, Davao Oriental, Dahican Beach is a beautiful, unspoiled stretch of coastline renowned for its clear turquoise waters and consistent waves, making it a popular spot for surfers of all levels. With its golden sand, lush surroundings, and relaxed atmosphere, Dahican is perfect for both adventure and relaxation. Beyond surfing, visitors can enjoy beach activities like skimboarding, paddleboarding, or simply lounging under the sun. Its peaceful and natural charm makes Dahican Beach an ideal destination for those seeking an escape into nature while enjoying thrilling water sports.</h4>
+	    	</blockquote>
+    	</div>
+    </div>
+
+    <div class = "section">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/dahican-beach.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/dahican-beach1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/dahican-beach2.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		<div class="content-text">
+    		<p>It is a stunning coastal destination known for its pristine beauty and excellent surfing conditions. The beach stretches for several kilometers, with powdery white sand and clear blue waters that attract both local and international surfers. The area is famous for its consistent waves, making it ideal for both beginners and experienced surfers.<br><br>Beyond surfing, Dahican offers a tranquil setting with its scenic views, making it a perfect spot for relaxation and outdoor activities like skimboarding and paddleboarding. The surrounding lush forests and crystal-clear waters add to its natural allure. With fewer crowds compared to more popular beaches, Dahican Beach is a peaceful escape for those looking to connect with nature and enjoy the beauty of the ocean.</p>
+    	</div>
+    	<hr>
+    	<h2>Location</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63370.802637583794!2d126.20697598695806!3d6.929375018078476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fbb60a3fffffff%3A0xd31710ab77b12a42!2sDahican%20Beach!5e0!3m2!1sen!2sph!4v1733815210492!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+	<div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Available Activities and Attractions</h1>
+    	<div class="content-text">
+    		
+    		<p>Discover the endless possibilities of fun and adventure with our Available Activities page! Whether you're a thrill-seeker, a nature lover, or simply looking to relax, we’ve curated the best activities to make your beach trip unforgettable.<br><br>scroll down to find out what awaits you and plan your perfect day by the sea. Your beach adventure starts here! </p>
+    	</div>
+    	<hr>
+    	<h2>Surfing</h2>
+		<img src="images/surfing-dahican.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For the more adventurous, cliff jumping at Magpupungko’s rocky formations is a thrilling activity. The natural landscape provides spots where you can safely leap into the cool waters below.</p>
+    	</div>
+
+    	<h2>Beach Volleyball</h2>
+		<img src="images/volleyball-dahican.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Dahican Beach is a paradise for surfers, offering consistent and reliable waves year-round. Whether you're a beginner looking for lessons or an experienced surfer seeking bigger waves, Dahican’s gentle swells and powerful breaks cater to all levels. The beach is known for its smooth, long rides, making it a great spot to practice and improve your skills. The surf culture is vibrant, with local surf schools available to guide you through the experience, ensuring fun and safety while enjoying the waves.</p>
+    	</div>
+
+    	<h2>Resorts hopping</h2>
+		<img src="images/hopping-dahican.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Dahican Beach is home to several cozy and picturesque resorts, perfect for those looking to unwind and enjoy the laid-back atmosphere. Resort hopping is a fun way to explore the different accommodations, each offering unique features, from beachfront cottages and pools to excellent local cuisine. You can spend your day lounging at one resort, then head to another for a meal or enjoy a new view. It’s a great way to discover the charm of Dahican while experiencing the hospitality of its local resorts.</p>
+    	</div>
+    </div>
+    	
+    <div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Local Restaurants</h1>
+    	<div class="content-text">
+    		
+    		<p>After a day of sun, sand, and sea, treat yourself to some of the best local dining experiences near Dahican Beach. This charming coastal area offers a variety of restaurants where you can indulge in delicious local and international cuisine while enjoying the stunning views and warm ambiance.<br><br>Whether you’re craving freshly caught seafood, traditional Filipino dishes, or something more familiar, the restaurants near Saud Beach cater to every taste. From beachfront dining with a view of the waves to cozy spots serving home-cooked meals, there’s something to satisfy every craving.</p>
+    	</div>
+    	<hr>
+    	<h2>Ciangi</h2>
+		<img src="images/ciangi.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Located along the stunning Dahican Beach, Ciangi is a cozy and vibrant restaurant known for its fresh seafood and locally inspired dishes. Offering a relaxed beachfront dining experience, Ciangi serves up a variety of Filipino favorites with a modern twist, including grilled seafood, fresh fish, and delicious local snacks. The laid-back atmosphere, paired with great food and friendly service, makes it an ideal place to unwind after a day of beach activities while enjoying the ocean breeze and scenic views.</p>
+    	</div>
+
+    	<h2>The Lokal</h2>
+		<img src="images/lokal.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For a unique taste of local and international flavors, The Lokal in Dahican Beach is a must-visit. With a menu that combines Filipino comfort food and global influences, The Lokal is perfect for those looking to indulge in fresh, flavorful meals. The relaxed yet modern ambiance makes it a great spot to enjoy a leisurely lunch or dinner, with popular dishes including savory meat dishes, fresh salads, and seafood. With its vibrant atmosphere and commitment to quality, The Lokal is a favorite dining spot for both locals and tourists alike.</p>
+    	</div>
+
+    	<h2>Paulpetz Food House - Dahican</h2>
+		<img src="images/paulpetz.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Paulpetz Food House is a charming restaurant in Dahican Beach that offers a simple but satisfying menu with a focus on fresh and delicious Filipino comfort food. Whether you're craving grilled meats, hearty stews, or local snacks, Paulpetz delivers flavorful dishes made with care and locally sourced ingredients. Known for its casual setting and friendly service, it’s the perfect spot to enjoy an authentic and affordable meal while relaxing in the peaceful surroundings of Dahican Beach.</p>
+    	</div>
+    </div>
+
+    <p style="color: gold;"> Reference:</p>
+    <a href="https://lakingdavao.wordpress.com/2018/04/08/ultimate-guide-in-dahican-beach/">Ultimate guide in Dahican Beach - Lakingdavao</a> <br>
+    <a href="https://www.tripadvisor.com.ph/RestaurantsNear-g3359771-d4908644-Amihan_sa_Dahican-Mati_Davao_Oriental_Mindanao.html">Restaurants near Dahican Beach</a>
+
+	<footer>
+			<ul class = "navigation-footer"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+	    	<hr>
+			<p class = "footer-text">Author: Marty Joash E. Vapor<br>
+			&copy; Copyright Reserved </p><br>
+    </footer>
+</body>
+</html>

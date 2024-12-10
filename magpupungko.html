@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Magpupungko Beach</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Mrs+Saint+Delafield&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href="css/index.css">
+
+</head>
+<body class = "body-main">
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<div class = "header"> 
+		<div class = "inner-header">
+			<div class = "logo-container">
+				<a href="../Finals_TravelVlog/index.html">
+				<h1>Lakbay<span>Isla</span></h1></a>
+			</div>
+
+			<ul class = "navigation"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+		</div>
+	</div>
+
+	<div class = "main-title">
+    	<h1>Magpupungko Beach</h1>
+    	<div class = "description">
+	    	<blockquote>
+	    		<h4>located in the island paradise of Siargao, is a serene escape known for its crystal-clear waters and stunning natural pools. The beach is famous for the Magpupungko Rock Pools, which are perfect for swimming during low tide, offering a picturesque spot to relax and cool off. Surrounded by lush greenery and rocky formations, the beach provides a tranquil setting away from the crowds, ideal for nature lovers and those seeking peace. Whether you're exploring the pools, enjoying the scenic beauty, or simply soaking in the calm atmosphere, Magpupungko Beach is a must-visit for anyone exploring Siargao.</h4>
+	    	</blockquote>
+    	</div>
+    </div>
+
+    <div class = "section">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/magpupungko-beach.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/magpupungko-beach1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/magpupungko-beach2.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		<div class="content-text">
+    		<p>Magpupungko Beach is a hidden gem located in Siargao, known for its stunning rock pools that are best visited during low tide. The beach features clear blue waters and a peaceful atmosphere, making it perfect for swimming, relaxing, and exploring its natural beauty. Surrounded by dramatic rock formations and lush greenery, Magpupungko Beach offers a tranquil escape for those looking to connect with nature and enjoy a less crowded, serene environment. It's a must-see destination for anyone visiting Siargao.</p>
+    	</div>
+    	<hr>
+    	<h2>Location</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1965.3435342668927!2d126.11894575677772!3d9.876599497545435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330408cd342cf5ef%3A0xf7f264915cf09a41!2sMagpopongko%20Rock%20Pools%20and%20Flats!5e0!3m2!1sen!2sph!4v1733813877021!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+
+	<div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Available Activities and Attractions</h1>
+    	<div class="content-text">
+    		
+    		<p>Discover the endless possibilities of fun and adventure with our Available Activities page! Whether you're a thrill-seeker, a nature lover, or simply looking to relax, we’ve curated the best activities to make your beach trip unforgettable.<br><br>scroll down to find out what awaits you and plan your perfect day by the sea. Your beach adventure starts here! </p>
+    	</div>
+    	<hr>
+    	<h2>Cliff Jumping</h2>
+		<img src="images/cliff-jump-magpupungko.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For the more adventurous, cliff jumping at Magpupungko’s rocky formations is a thrilling activity. The natural landscape provides spots where you can safely leap into the cool waters below.</p>
+    	</div>
+
+    	<h2>Rock Pool Swimming</h2>
+		<img src="images/swimming-magpupungko.webp" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>The iconic Magpupungko Rock Pools are the main attraction, offering crystal-clear natural pools that are perfect for swimming. These pools are best enjoyed during low tide when they are fully exposed, allowing for a refreshing dip surrounded by stunning rock formations.</p>
+    	</div>
+
+    	<h2>Snorkeling</h2>
+		<img src="images/snorkling-magpupungko.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Take a leisurely stroll along the soft sand of Magpupungko Beach, which is less crowded than other popular beaches. Enjoy the peaceful ambiance, look for seashells, or simply unwind by the sea.</p>
+    	</div>
+    </div>
+    	
+    <div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Local Restaurants</h1>
+    	<div class="content-text">
+    		
+    		<p>After a day of sun, sand, and sea, treat yourself to some of the best local dining experiences near Magpupungko Beach. This charming coastal area offers a variety of restaurants where you can indulge in delicious local and international cuisine while enjoying the stunning views and warm ambiance.<br><br>Whether you’re craving freshly caught seafood, traditional Filipino dishes, or something more familiar, the restaurants near Saud Beach cater to every taste. From beachfront dining with a view of the waves to cozy spots serving home-cooked meals, there’s something to satisfy every craving.</p>
+    	</div>
+    	<hr>
+    	<h2>NAGA Siargao</h2>
+		<img src="images/naga.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>NAGA Siargao is a trendy, oceanfront restaurant that offers a unique fusion of local and international cuisine, with an emphasis on fresh, high-quality ingredients. Whether you’re in the mood for a seafood feast or a deliciously crafted cocktail, NAGA’s menu has something for everyone. The contemporary design, relaxed ambiance, and stunning views of the sea make it a perfect spot to enjoy a meal while watching the sunset. Known for its fresh fish dishes and creative cocktails, NAGA offers an unforgettable dining experience in Siargao.</p>
+    	</div>
+
+    	<h2>Shaka Siargao</h2>
+		<img src="images/shaka.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Located in the heart of Siargao, Shaka Siargao is a vibrant, laid-back café known for its fresh, healthy menu that perfectly complements the island’s relaxed atmosphere. Specializing in smoothie bowls, acai bowls, fresh juices, and vegan-friendly dishes, Shaka is a favorite spot for those looking to fuel up with wholesome and delicious meals. With its cozy, beachy vibe and friendly service, it’s the perfect place to unwind after a day of exploring the island or to start your morning with a nutritious boost.</p>
+    	</div>
+
+    	<h2>Bravo Restaurant</h2>
+		<img src="images/bravo.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Located near Magpupungko Beach, Bravo Restaurant is a popular dining spot offering delicious Mediterranean-inspired cuisine, fresh seafood, and flavorful local dishes. With its laid-back ambiance and scenic views, Bravo provides a relaxing environment where you can enjoy meals crafted with the finest ingredients. From fresh seafood platters to mouthwatering tapas and signature cocktails, Bravo offers a delightful culinary experience that’s perfect after a day at the beach.</p>
+    	</div>
+    </div>
+
+    <p style="color: gold;"> Reference:</p>
+    <a href="https://www.journeyera.com/magpupungko-rock-pools-on-siargao-island/">Magpupungko Rock Pools on Siargao Island: Ultimate Guide</a> <br>
+    <a href="https://www.tripadvisor.com.ph/RestaurantsNear-g674645-d2043736-Magpupungko_Beach-Siargao_Island_Surigao_del_Norte_Province_Mindanao.html">Restaurants near Magpupungko Beach</a>
+
+	<footer>
+			<ul class = "navigation-footer"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+	    	<hr>
+			<p class = "footer-text">Author: Marty Joash E. Vapor<br>
+			&copy; Copyright Reserved </p><br>
+    </footer>
+</body>
+</html>

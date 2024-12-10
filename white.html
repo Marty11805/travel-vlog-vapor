@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>White Beach</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Mrs+Saint+Delafield&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href="css/index.css">
+
+</head>
+<body class = "body-main">
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<div class = "header"> 
+		<div class = "inner-header">
+			<div class = "logo-container">
+				<a href="../Finals_TravelVlog/Vapor_Final-Examination.html">
+				<h1>Lakbay<span>Isla</span></h1></a>
+			</div>
+
+			<ul class = "navigation"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+		</div>
+	</div>
+
+	<div class = "main-title">
+    	<h1>White Beach</h1>
+    	<div class = "description">
+	    	<blockquote>
+	    		<h4>Experience the breathtaking beauty of White Beach, the crown jewel of Malay, Aklan, and one of the most famous beaches in the world. Known for its powdery white sand that feels like silk underfoot and its crystal-clear turquoise waters, White Beach is a tropical paradise that promises an unforgettable escape.<br><br>Stretching over four kilometers, the beach is divided into three stations, each offering a unique vibe. Whether you’re looking for bustling nightlife, family-friendly activities, or a tranquil retreat, there’s a spot on White Beach for everyone.<br><br>Indulge in water sports like snorkeling, paddleboarding, or parasailing, or simply lounge by the shore with a refreshing coconut drink in hand. As the sun sets, the beach transforms into a magical spectacle of colors, providing the perfect backdrop for romantic evenings or vibrant gatherings.<br><br>Surrounded by world-class resorts, local shops, and restaurants offering everything from fresh seafood to international cuisine, White Beach is the ultimate destination for relaxation, adventure, and discovery. Come and experience why this iconic beach continues to captivate travelers from all over the globe!
+	    	</blockquote>
+    	</div>
+    </div>
+
+    <div class = "section">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/white-beach.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/white-beach1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/white-beach2.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		<div class="content-text">
+    		<p>White Beach is essentially Boracay Island. As the island's main attraction, this Boracay beach is one of the best Visayas tourist spots and top tourist spots in the Philippines.<br><br>Situated in the province of Aklan, White Beach is one of the best beaches in the Philippines and has always been the star of the show in Boracay Island. Travelers from all over the Philippines and the world can’t help but admire this Boracay beach's breathtaking beauty. 
+    	</div>
+    	<hr>
+    	<h2>Location</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15613.273572000491!2d121.929614!3d11.9524438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c22c3a8466b%3A0x443e5166ae9cf4b2!2sWhite%20Beach!5e0!3m2!1sen!2sph!4v1733808082717!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+	</div>
+
+	<div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Available Activities and Attractions</h1>
+    	<div class="content-text">
+    		
+    		<p>Discover the endless possibilities of fun and adventure with our Available Activities page! Whether you're a thrill-seeker, a nature lover, or simply looking to relax, we’ve curated the best activities to make your beach trip unforgettable.<br><br>scroll down to find out what awaits you and plan your perfect day by the sea. Your beach adventure starts here! </p>
+    	</div>
+    	<hr>
+    	<h2>Paddle Boarding</h2>
+		<img src="images/paddle-board.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Glide across the tranquil turquoise waters of White Beach on a paddleboard and soak in the breathtaking scenery around you. Paddleboarding is a relaxing yet engaging activity perfect for beginners and seasoned adventurers alike. Whether you're exploring the shallow shores or venturing further out to enjoy the serenity of the open sea, it's a fantastic way to connect with the beauty of Boracay's pristine coastline.</p>
+    	</div>
+
+    	<h2>Kite Surfing</h2>
+		<img src="images/sunset-saud.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For thrill-seekers, White Beach offers an exhilarating kite surfing experience that combines the power of the wind with the thrill of riding the waves. With its steady breezes and vast waters, Boracay is a world-renowned kite surfing destination. Feel the rush as you soar across the water and perform daring stunts, all while surrounded by the island's stunning natural beauty. It’s an unforgettable adventure that will get your adrenaline pumping!</p>
+    	</div>
+
+    	<h2>Snorkeling</h2>
+		<img src="images/snorkling-saud.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Discover the vibrant underwater world of White Beach with a snorkeling adventure. With its crystal-clear waters and abundant marine life, Boracay offers an incredible snorkeling experience for nature lovers. Explore colorful coral reefs teeming with fish and other sea creatures just a short distance from the shore. Snorkeling is a must-try activity for anyone looking to marvel at the hidden wonders beneath the waves.</p>
+    	</div>
+    </div>
+    	
+    <div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Local Restaurants</h1>
+    	<div class="content-text">
+    		
+    		<p>After a day of sun, sand, and sea, treat yourself to some of the best local dining experiences near White Beach. This charming coastal area offers a variety of restaurants where you can indulge in delicious local and international cuisine while enjoying the stunning views and warm ambiance.<br><br>Whether you’re craving freshly caught seafood, traditional Filipino dishes, or something more familiar, the restaurants near Saud Beach cater to every taste. From beachfront dining with a view of the waves to cozy spots serving home-cooked meals, there’s something to satisfy every craving.</p>
+    	</div>
+    	<hr>
+    	<h2>Munimuni Restaurant</h2>
+		<img src="images/munimuni.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Munimuni Restaurant offers a serene dining experience that perfectly reflects its name, which means "to ponder" in Filipino. Known for its modern take on Filipino cuisine, the restaurant serves thoughtfully crafted dishes made from fresh, locally sourced ingredients. From flavorful seafood to innovative reinterpretations of classic dishes like adobo and sinigang, every meal at Munimuni is a culinary delight. With its cozy ambiance and beachfront views, it’s an ideal spot to unwind and savor the tastes of the island.</p>
+    	</div>
+
+    	<h2>8 by the Beach</h2>
+		<img src="images/8.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>If you’re looking for a laid-back spot with incredible food and an unbeatable view, 8 by the Beach is the place to be. This beachfront gem serves a diverse menu that includes fresh seafood, hearty Filipino favorites, and international comfort food. Whether you’re enjoying a leisurely breakfast, a casual lunch, or a sunset dinner, the relaxed atmosphere and attentive service make dining here a pleasure. Pair your meal with one of their signature cocktails for the perfect tropical experience.</p>
+    	</div>
+
+    	<h2>The Sunny Side Cafe</h2>
+		<img src="images/sunny-side.png" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Bright, cheerful, and bursting with flavor, The Sunny Side Café is a must-visit for breakfast and brunch lovers in Boracay. Famous for its creative twists on morning classics, the café offers dishes like mango and coconut pancakes, savory chorizo omelets, and indulgent grilled cheese sandwiches. Vegan and gluten-free options ensure there’s something for everyone. With its vibrant interior, friendly vibe, and excellent coffee, The Sunny Side Café is the perfect spot to kickstart your day on the island.</p>
+    	</div>
+    </div>
+
+    <p style="color: gold;"> Reference:</p>
+    <a href="https://guidetothephilippines.ph/articles/ultimate-guides/boracay-white-beach-guide">Guide to White Beach in Boracay Island</a> <br>
+    <a href="https://www.tripadvisor.com.ph/RestaurantsNear-g294260-d338331-White_Beach-Boracay_Malay_Aklan_Province_Panay_Island_Visayas.html">Restaurants near White Beach</a>
+
+	<footer>
+			<ul class = "navigation-footer"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+	    	<hr>
+			<p class = "footer-text">Author: Marty Joash E. Vapor<br>
+			&copy; Copyright Reserved </p><br>
+    </footer>
+</body>
+</html>

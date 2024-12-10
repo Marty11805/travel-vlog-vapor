@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patar Beach</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Gowun+Dodum&family=Mrs+Saint+Delafield&family=Yeseva+One&display=swap" rel="stylesheet">
+
+	<link rel = "stylesheet" type = "text/css" href="css/index.css">
+
+</head>
+<body class = "body-main">
+
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		    slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		    dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+	</script>
+
+	<div class = "header"> 
+		<div class = "inner-header">
+			<div class = "logo-container">
+				<a href="../Finals_TravelVlog/index.html">
+				<h1>Lakbay<span>Isla</span></h1></a>
+			</div>
+
+			<ul class = "navigation"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+		</div>
+	</div>
+
+	<div class = "main-title">
+    	<h1>Saud Beach</h1>
+    	<div class = "description">
+	    	<blockquote>
+	    		<h4>Dubbed the "Boracay of the North," Saud Beach in Pagudpud, Ilocos Norte, is a pristine haven that combines tranquility with natural beauty. Its powdery white sand, crystal-clear turquoise waters, and stunning views make it a top destination for those seeking a serene tropical escape.<br><br>Perfect for swimming, sunbathing, or simply unwinding, Saud Beach offers a peaceful atmosphere away from the crowds. The gently sloping shoreline and calm waters make it family-friendly, while the picturesque coconut trees lining the coast add to its postcard-perfect charm.<br><br>As the day winds down, don’t miss the breathtaking sunset—watch as the sky transforms into a canvas of vivid colors, providing the perfect backdrop for unforgettable memories. For the adventurous, nearby attractions like the Bangui Windmills and the Patapat Viaduct add an extra layer of excitement to your visit.<br><br>Whether you're seeking relaxation or adventure, Saud Beach is a must-visit destination that promises a slice of paradise in the heart of the north.</h4>
+	    	</blockquote>
+    	</div>
+    </div>
+
+    <div class = "section">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/saud-beach.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/saud-beach1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/saud-beach2.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+		<div class="content-text">
+    		<p>Saud Beach in Pagudpud, Ilocos Norte, is a tranquil paradise known for its white sand, crystal-clear waters, and breathtaking sunsets. Often called the "Boracay of the North," it offers a serene escape perfect for swimming, relaxing, and enjoying nature. Fringed by coconut trees and boasting a peaceful ambiance, Saud Beach is ideal for families and travelers seeking a quieter beach experience. Nearby attractions like the Bangui Windmills and Patapat Viaduct add to its appeal, making it a must-visit destination in northern Luzon.</p>
+    	</div>
+    	<hr>
+    	<h2>Location</h2>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15127.37348444729!2d120.78393209999999!3d18.58109885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3389214be47d0d4f%3A0x2f66cb7b3af33a1b!2sSaud%20Beach!5e0!3m2!1sen!2sph!4v1733803921177!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		
+	</div>
+
+	<div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Available Activities and Attractions</h1>
+    	<div class="content-text">
+    		
+    		<p>Discover the endless possibilities of fun and adventure with our Available Activities page! Whether you're a thrill-seeker, a nature lover, or simply looking to relax, we’ve curated the best activities to make your beach trip unforgettable.<br><br>scroll down to find out what awaits you and plan your perfect day by the sea. Your beach adventure starts here! </p>
+    	</div>
+    	<hr>
+    	<h2>Surfing or Paddle Boarding</h2>
+		<img src="images/surfing.webp" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>If you’re looking for a fun way to explore the calm waters, try paddleboarding. Glide across the gentle sea on a board while taking in the breathtaking coastal views. It’s an enjoyable way to stay active while soaking up the beauty of Saud Beach.</p>
+    	</div>
+
+    	<h2>Sunset Viewing</h2>
+		<img src="images/sunset-saud.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>One of the most magical experiences at Saud Beach is watching the sunset. As the day winds down, the sky transforms into a canvas of stunning colors—from vibrant oranges to soft pinks and purples. Whether you’re sitting on the sand or taking a boat ride, it’s a sight you won’t want to miss.</p>
+    	</div>
+
+    	<h2>Snorkeling</h2>
+		<img src="images/snorkling-saud.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>For those wanting to explore the underwater world, snorkeling at Saud Beach is a must. Discover vibrant coral reefs and colorful marine life just off the shore. The clear waters provide excellent visibility, making it a fantastic spot for both beginners and experienced snorkelers.</p>
+    	</div>
+    </div>
+
+    <div class = "section" style = "margin-top: 100px; padding-top: 50px;">
+    	<h1>Local Restaurants</h1>
+    	<div class="content-text">
+    		
+    		<p>After a day of sun, sand, and sea, treat yourself to some of the best local dining experiences near Saud Beach. This charming coastal area offers a variety of restaurants where you can indulge in delicious local and international cuisine while enjoying the stunning views and warm ambiance.<br><br>Whether you’re craving freshly caught seafood, traditional Filipino dishes, or something more familiar, the restaurants near Saud Beach cater to every taste. From beachfront dining with a view of the waves to cozy spots serving home-cooked meals, there’s something to satisfy every craving.</p>
+    	</div>
+    	<hr>
+    	<h2>BergBlick Restaurant</h2>
+		<img src="images/bergblick.webp" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>BergBlick Restaurant is a haven for food lovers seeking a unique fusion of local and international flavors. Known for its warm, homey atmosphere, this family-run establishment serves delectable dishes crafted from fresh, local ingredients. Try their signature pork knuckles, hearty soups, or delightful seafood platters for a satisfying culinary experience. With its friendly service and picturesque views, BergBlick Restaurant is a must-visit for anyone exploring the beauty of Saud Beach.</p>
+    	</div>
+
+    	<h2>La Cocina de Consuelo at Casa Consuelo</h2>
+		<img src="images/cosina.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>Located within Casa Consuelo, La Cocina de Consuelo offers an intimate dining experience that highlights the rich culinary traditions of Ilocos Norte. This charming restaurant serves a range of Filipino favorites, from bagnet (crispy pork belly) to pinakbet (vegetable stew), paired with locally inspired drinks. The rustic yet elegant ambiance, combined with a focus on fresh, locally sourced ingredients, makes every meal here memorable. Perfect for both casual dining and romantic evenings, La Cocina de Consuelo is a gem near Saud Beach.</p>
+    	</div>
+
+    	<h2>Emohruo Beach Resort</h2>
+		<img src="images/emohruo.jpg" style="margin-top: 20px;">
+		<div class="content-text">
+    		<p>At Emohruo Beach Resort, dining is more than just a meal—it’s an experience. Situated right by Saud Beach, this resort’s restaurant offers stunning ocean views to complement its mouthwatering menu. Known for its freshly prepared seafood and classic Filipino comfort food, Emohruo provides a cozy, laid-back atmosphere perfect for unwinding after a day in the sun. Whether you’re enjoying a beachfront breakfast or a candlelit dinner, the warm hospitality and flavorful dishes make this spot a favorite among locals and travelers alike.</p>
+    	</div>
+    </div>
+    	
+    <p style="color: gold;"> For more information, Click this link:</p>
+    <a href="https://www.tripadvisor.com.ph/RestaurantsNear-g676742-d3825930-Saud_Beach-Pagudpud_Ilocos_Norte_Province_Ilocos_Region_Luzon.html">Restaurants near Saud Beach</a>
+
+	<footer>
+			<ul class = "navigation-footer"> 
+				<a href= "../Finals_TravelVlog/major-islands.html"><li>Destination</li></a>
+		        <a href= "../Finals_TravelVlog/tips.html"><li>Travel Tips</li></a>
+		        <a href= "../Finals_TravelVlog/personal.html"><li>Personal Experience</li></a>
+		        <a href= "../Finals_TravelVlog/necessity.html"><li>Travel Necessities</li></a>
+		        <a href= "../Finals_TravelVlog/contact.html"><li>Contact us</li></a>
+		        <a href= "../Finals_TravelVlog/VideoGallery.html"><li>Gallery</li></a>
+		        <a href= "../Finals_TravelVlog/LogIn.html"><li>Account</li></a>
+	    	</ul>
+	    	<hr>
+			<p class = "footer-text">Author: Marty Joash E. Vapor<br>
+			&copy; Copyright Reserved </p><br>
+    </footer>
+    <!--https://travelthroughparadise.com/destinations/articles/Bolinao_7_Things_To_Do.php-->
+</body>
+</html>
